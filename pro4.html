@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<style type="text/css">
+</style>
+</head>
+<body id="page" style="background-color:white">
+<div class="container">
+
+	<div class="row">
+		<div class="col">
+		<h1>GRADE SHEET OF TOLANI SECONDARY SCHOOL</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			
+			<table class="table">
+			<thead>
+				<tr>
+					<th>subject</th>
+					<th>score</th>
+					<th>grade</th>
+				</tr>
+			</thead>
+
+		<tbody id="shell">
+
+			<tr>
+			<th>english</th>
+			<td>
+				<input type="number" name="score" id="englishscore" onchange="english(document.getElementById('englishscore').value, 'eng')">
+			</td>
+			<td>
+				<input type="text" name="grade" id="englishgrade">
+			</td>
+			</tr>
+
+			<tr>
+			<th>maths</th>
+			<td>
+				<input type="number" name="score" id="mathscore" onchange="math(document.getElementById('mathscore').value,'math')">
+			</td>
+			<td>
+				<input type="text"name="grade" id="mathgrade">
+			</td>
+			</tr>
+
+			<tr>
+			<th>chemistry</th>
+			<td>
+				<input type="number" name="score" id="chemistryscore" onchange="chemistry(document.getElementById('chemistryscore').value,'chem')">
+			</td>
+
+			<td>
+				<input type="text" name="grade" id="chemistrygrade" disabled>
+			</td>
+			</tr>
+
+			<tr>
+			<th>biology</th>
+			<td>
+				<input type="number" name="score" id="biologyscore" onchange="biology(document.getElementById('biologyscore').value,'bio')">
+			</td>
+			<td>
+				<input type="text" name="grade" id="biologygrade">
+			</td>
+			</tr>
+
+			<tr>
+			<th>french</th>
+			<td>
+				<input type="number" name="score" id="frenchscore" onchange="french(document.getElementById('frenchscore').value,'french')">
+			</td>
+			<td>
+				<input type="text" name="grade" id="frenchgrade">
+			</td>
+			</tr>
+
+		</tbody>
+			</table>
+
+		</div>
+
+</div>
+
+<div class="row">
+	<div class="col">
+		<button id="checkresult" onclick="myscore()">get result</button>
+	</div>
+</div>
+
+
+<!-- 2 d -->
+<div class="row">
+	<div class="col">
+		<p >TOTAL</p>
+	</div>
+	<div class="col">
+		<p id="total"></p>
+	</div>
+</div>
+<!-- 2 end -->
+
+<!-- 3 d -->
+<div class="row">
+	<div class="col">Average</div>
+	<div class="col">
+		<p id="average"></p>
+	</div>
+</div>
+<!-- 3 end -->
+
+<!-- 4 d -->
+<div class="row">
+	<div class="col">remarks</div>
+	<div class="col">
+		<p id="proud"></p>
+	</div>
+	<div class="col">
+			<img id="image" height="200" width="200">	
+	</div>
+</div>
+<!-- 4 end -->
+
+
+
+
+
+
+
+
+
+
+</div><!--closing div -->
+
+
+
+
+	<!--js files-->
+	<script type="text/javascript" language="javascript">
+// 		var excel= prompt('grade')
+// 		if(excel>=70){document.getElementById('score').value='A'}
+		
+// alert(excel)
+
+
+	</script>
+	<script type="text/javascript" language="javascript" src="pro4.js"></script>
+	
+</body>
+</html>
